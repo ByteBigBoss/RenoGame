@@ -8,6 +8,8 @@ import { useState } from 'react';
 
 type SystemUpdateOptions = 'maintain' | 'deploy' | 'coming soon';
 
+import BlockPuzzle from '@/Games/BlockPuzzle/Game';
+
 export default function Home() {
   const [systemUpdate, setSystemUpdate] = useState<SystemUpdateOptions>('deploy');
 
@@ -28,6 +30,8 @@ export default function Home() {
           <main className="flex min-h-screen  flex-col items-center dark:bg-black  bg-icx-primary dark:bg-icx-primary-dark overflow-hidden">
            
            <ThemeToggleSwitch/>
+
+           <BlockPuzzle/>
 
           </main>
           </ThemeProvider>
